@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tienda de Hardware Para Chetos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=""><img class="logo" src="img/icono.png" alt=""></a></li>
+                    <li class="carritoL"><a href="#" id="btnCarrito"><img id="imgCarrito" class="carrito" src="img/carrito.png" alt=""></a></li>
+                    <li id="cajitaNumero">0</li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="busqueda">
+            <input type="text" placeholder="Buscar por nombre" id="buscador">
+            <button id="botonFiltro"><span>Buscar</span></button>
+        </aside>
+        <main>
+            <div>
+                <h1>Productos destacados</h1>
+            </div>
+            <div class="contenedorItemsF">
+                <div id="items">
+                    <ul id="lista">
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer id="listaCarrito">
+            <h4>Agregá productos a tu Carrito!</h4>
+            <hr>
+            <div>
+                <ul id="itemsCarrito">
+
+                </ul>
+            </div>
+            <h4>Total: $ <span id="precioTotal">0</span></h4>
+        </footer>
+        <script src="./js/js.js"></script>
+    </body>
+</html>

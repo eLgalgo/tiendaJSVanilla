@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(194, 123, 90);
+}
+nav{
+    background-color: rgba(245, 189, 156, 0.904);
+}
+nav li{
+    margin: 1rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    list-style: none;
+}
+
+.logo{
+    width: 12rem;
+}
+.carrito{
+    width: 3.5rem;
+}
+header{
+    top: 0;
+    position: sticky;
+}
+.carritoL{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    margin: 1rem;
+    width: 60%;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border:rgb(109, 108, 108) solid 0rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+button{
+    height: 2.5rem;
+    border: solid rgb(141, 140, 140) 0rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+button span{
+    font-size: .9rem;
+    margin: 1rem;
+}
+#busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorItemsF{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+.contenedorItemsF div{
+    margin: 1rem;
+}
+
+main{
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0rem 5rem;
+}
+main h1{
+    padding: 1rem;
+}
+#items{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgb(194, 194, 194) solid .1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card img{
+    max-width: 40%;
+    vertical-align: middle;
+}
+
+.botonComprar{
+    font-size: 1rem;
+    background-color: green;
+    width: 100%;
+    color: white;
+}
+
+.botonComprar:hover{
+    background-color: rgb(98, 158, 9);
+}
+
+.precio{
+    font-size: 1.5rem;
+}
+
+.textoPrecio{
+    font-size: larger;
+}
+
+#lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+.noEncontrado{
+    font-size: 2rem;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    width: 21%;
+    height: 79.9%;
+    bottom: 0px;
+    left: 109%;
+    position:fixed;
+}
+.carritoAnimation{
+    animation-duration: .8s;
+    animation-name: carritoAnimation;
+    left: 79%;
+}
+
+
+@keyframes carritoAnimation {
+    from{
+        left: 109%;
+    }
+    to{
+        left: 79%;
+    }
+}
+
+.carritoAnimationSalir{
+    animation-duration: .8s;
+    animation-name: carritoAnimationSalir;
+    left: 109%;
+}
+
+
+@keyframes carritoAnimationSalir {
+    from{
+        left: 79%;
+    }
+    to{
+        left: 109%;
+    }
+}
+
+#listaCarrito h4{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+#itemsCarrito{
+    list-style: none;
+    margin: 1rem;
+}
+#itemsCarrito li{
+    margin: .6rem;
+}
+
+.btnCerrarCarrito{
+    background-color: rgb(161, 7, 7);
+    color: white;
+    padding: .2rem;
+
+}
+.divCarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cajitaNumero{
+    left: 94.3%;
+    top: 1%;
+    position: fixed;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: rgb(136, 2, 2);
+    opacity: 0%;
+}
